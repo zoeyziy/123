@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">scheduleApp</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="location_permission_denied">Permission Denied</string>
+    <string name="permission_required_toast">Location Permission Required</string>
+    <string name="permission_rationale_location">Permission to use location</string>
+    <string name="map_button_string">Go to Maps</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title_activity_schedule_appt" translatable="false">ScheduleApptActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+    <string name = "log_in">Login</string>
+    <string name = "Register">Register</string>
+    <string name = "Cancel">Cancel</string>
+    <string name = "Delete_Vin">Delete Vin</string>
+    <string name = "Maps">Maps</string>
+    <string name = "Schedule_An_Appointment">Schedule an Appointment</string>
+    <string name = "Select_Date">Select Date</string>
+    <string name = "Select_Time">Select Time</string>
+    <string name = "Schedule_Appointment">Schedule Appointment</string>
+    <string name = "Add">Add</string>
+    <string name = "Welcome_to_DashBoard">Welcome to DashBoard</string>
+    <string name = "log_out">Logout</string>
+    <string name = "Enter_your_appointment_details">Enter your appointment details</string>
+    <string name = "Which_vehicle_needs_serviced">Which vehicle needs serviced?</string>
+    <string name = "Describe_your_vehicle_issue">Describe your vehicle issue</string>
+    <string name = "Any_other_notes_about_this_appointment">Any other notes about this appointments</string>
+    <string name = "Please_Enter_Vehicle_Information">Please Enter Vehicle Information</string>
+    <string name = "UserName">UserName</string>
+    <string name = "Email">Email</string>
+    <string name = "Password">Password</string>
+    <string name = "Phone_number">Phone Number</string>
+    <string name = "Repair_shop_name">Repair shop name [GOOGLE MAPS]</string>
+    <string name = "Repair_shop_location">Repair shop location [GOOGLE MAPS]</string>
+    <string name = "VIN_EX">Ex. VIN123</string>
+    <string name = "vehicle_issue">Ex. Check engine light is on, out of blinker fluid...</string>
+    <string name = "notes_Ex">Ex. Ask for Dan.</string>
+    <string name = "make">Make</string>
+    <string name = "Mileage">Mileage</string>
+    <string name = "Model">Model</string>
+    <string name = "Year">Year</string>
+    <string name = "VIN">VIN</string>
+</resources>

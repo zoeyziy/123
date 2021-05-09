@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RegisterVehicleActivity"
+    android:id = "@+id/registerVehicle">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="@string/Please_Enter_Vehicle_Information"
+        />
+    <EditText
+        android:id="@+id/edMake"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "@string/make"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/edMileage"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "@string/Mileage"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/edModel"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "@string/Model"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/edYear"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "@string/Year"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/edVin"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "@string/VIN"
+        android:inputType="text"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/Add"
+        android:onClick="saveNote"
+        android:id="@+id/registerVehicleButton"
+        />
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ScheduleApptActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Enter_your_appointment_details"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/Repair_shop_name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:hint="@string/Repair_shop_location"
+         />
+<!--    <fragment-->
+<!--        android:id = "@+id/autocomplete_fragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/dateLabel"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:gravity="left"
+            android:text="@string/Select_Date"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Select_Date"
+            android:id="@+id/buttonDate"
+            android:layout_alignBottom="@+id/dateLabel"
+            android:layout_toRightOf="@+id/dateLabel"
+            android:layout_toEndOf="@+id/dateLabel"
+            android:layout_marginLeft="10dp"
+            android:onClick="editDateButton"/>
+
+        <TextView
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeLabel"
+            android:layout_below="@+id/dateLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:gravity="left"
+            android:text="@string/Select_Time"
+            android:textSize="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Select_Time"
+            android:id="@+id/buttonTime"
+            android:layout_below="@+id/buttonDate"
+            android:layout_alignLeft="@+id/buttonDate"
+            android:layout_alignStart="@+id/buttonDate"
+            android:onClick="editTimeButton"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/vehicleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="@string/Which_vehicle_needs_serviced"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/VIN_EX"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/descLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="@string/Describe_your_vehicle_issue"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/vehicle_issue"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/notesLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="@string/Any_other_notes_about_this_appointment"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/notes_Ex"
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="submitAppt"
+        android:text="@string/Schedule_Appointment" />
+
+</LinearLayout>
